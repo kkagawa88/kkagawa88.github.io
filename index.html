@@ -5,11 +5,12 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>
     <!-- nav bar lightsaber icon -->
-    <secton>
+    <secton id="menu_icon">
         <div id="light_saber_container">
             <div id="burger">
                     <div class="bun top"></div>
@@ -17,7 +18,6 @@
                     <div class="bun bottom"></div>
             </div>
         </div>
-        
     </secton>    
 
     <!--Expanded navbar-->
@@ -27,23 +27,78 @@
             <a href="#about">About</a>
         </li>
         <li class="yellow">
-            <a href="#">Previous Work</a>
+            <a href="#previous">Previous Work</a>
         </li>
         <li class="green">
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
         </li>
         <li class="blue">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </li>
         </ul>
     </nav>
+
+    <!--MAIN CONTENT-->
+    <div id="main_content">
+        <!-- ABOUT ME SECTION-->
+        <div id="about">
+            <h1>More About Me: Katherine Kagawa</h1>
+            <img
+              src="https://www.liveabout.com/thmb/OHyay7RPSFHxasgJ9_Okz1Jhu-Q=/1167x1167/smart/filters:no_upscale()/yoda-56a8f97a3df78cf772a263b4.jpg"
+              alt="profile"
+              width="200"
+              height="200"
+            >
+            <p class="description">
+              Hi! My name is Katherine. I'm majoring in computer science and this is
+              my last quarter of my senior year. I'm most comfortable with c++, c, 
+              java, javascript, python, and typescript.I like playing and making video games, 
+              but I've recently been getting more experience in making website. 
+              Such as the one you're on now!
+            </p>
+            <p>
+                Email: kkagawa@pdx.edu <br/>
+                Look at my github to see some of my other projects!
+            </p>
+            <div className="d-flex justify-content-center">
+                <Button variant="outline-info">
+                    <a href="https://github.com/kkagawa88">
+                        Check it out!
+                        <i className="fa fa-github"/>
+                    </a>
+                </Button>
+            </div>
+        </div>
+        <!--PREVIOUS WORK-->
+        <section id="previous">
+            
+        </section>
+        <!--PREVIOUS PROJECTS-->
+        <section id="projects">
+            <a href="https://google.com" class="card card1">
+                <div class="inner">
+                <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+                </div>
+            </a>
+                
+            <a href="https://google.com" class="card card2">
+                <div class="inner">
+                <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+                <time class="subtitle">03. März 2021<time>
+                </div>
+            </a>
+        
+            <a href="https://google.com" class="card card3">
+                <div class="inner">
+                <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+                <time class="subtitle">03. März 2021<time>
+                </div>
+            </a>
+        </section>
+    </div>
+
     <!--Nav bar script-->
     <script  src="./nav_bar_script.js"></script>
-
-    
-    <!--About me section-->
-    <section id="about">
-    </section>
 
 </body>
 </html>

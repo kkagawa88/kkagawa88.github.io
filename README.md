@@ -2,7 +2,7 @@
  creating a personal website for web dev course
 
 #References
-dividers on section title: https://stackoverflow.com/questions/28318976/how-to-create-both-sided-dotted-line-around-a-title\
+dividers on section title: https://stackoverflow.com/questions/28318976/how-to-create-both-sided-dotted-line-around-a-title  
 star wars nav bar animation: https://codepen.io/Naito/pen/pgyOVm
 
 #to run project

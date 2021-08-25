@@ -7,21 +7,22 @@ html, body {
   box-sizing: border-box;
 }
 
-#container {
+#light_saber_container {
   width: 80px;
   height: 80px;
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
+  overflow: hidden;
 }
 
 #burger {
+  position: relative;
   cursor: pointer;
   opacity: 0;
   -webkit-animation: fadein 0.2s ease 1s forwards;
           animation: fadein 0.2s ease 1s forwards;
-  overflow: hidden;
-  position: relative;
+
   width: 100%;
   height: 100%;
 }
@@ -109,6 +110,7 @@ nav {
 }
 nav.show {
   transform: translatex(0%);
+  position: fixed;
 }
 nav ul {
   list-style: none;

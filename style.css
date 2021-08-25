@@ -17,18 +17,21 @@
   padding: 10px;
   height: 300px; Should be removed. Only for demonstration 
 }
-
+FFE81F
 */
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html, body {
-  background: #222;
+  background: 
+   url(https://thumbs.gfycat.com/FeistyJaggedBuffalo-size_restricted.gif) repeat; 
 }
 
 * {
   box-sizing: border-box;
 }
+
+/*********LIGHTSABER MENU ICON**********/
 
 #menu_icon{
   font-family: Open Sans;
@@ -126,6 +129,8 @@ html, body {
   -webkit-animation: green-ls-in 0.8s ease forwards;
           animation: green-ls-in 0.8s ease forwards;
 }
+
+/*********NAV BAR**********/
 
 nav {
   font-family: Open Sans;
@@ -272,40 +277,50 @@ nav ul li.yellow:hover {
 }
 
 
-.nav_column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-  font-family: Open Sans;
-  color: white;
-  background: #111;
-  position: absolute;
-  transform: translatex(-100%);
-  transition: transform 0.2s ease;
-  top: 80px;
-  bottom: 0px;
-  padding-right: 16px;
-  width: 300px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 
 /*************MAIN CONTENT****************/
 
 #main_content{
   margin-top: 100px;
-  color:#ecfcff;
+  color:#FFE81F;
 }
 .shrink_content{
+  /*When navbar expands, the main content should move outta the way*/
   margin-left: 300px;
+}
+
+#main_title{
+  text-align: center;
+}
+
+/****COMMON SECTION STUFF***/
+.section_title{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 100px;
+}
+.divider{
+
+  overflow:hidden;
+  width: 80%;
+  text-align: center;
+  line-height:1.2em;
+  margin-left: 10%;
+}
+
+.divider:before, .divider:after{
+  content:"";
+  vertical-align:middle;
+  display:inline-block;
+  width:50%;
+  border-bottom:2px dotted #ccc;
+  margin:0 2% 0 -55%;
+}
+.divider:after{
+  margin:0 -55% 0 2%;
+}
+h1:nth-child(2){
+  font-size:3em;
 }
 
 
@@ -320,6 +335,7 @@ nav ul li.yellow:hover {
   width: 50vw;
   margin-left:auto;
   margin-right:auto;
+  
 }
 
 .description{
@@ -335,10 +351,12 @@ img{
 
 /* Previous work */
 section#previous{
-  max-width: 70%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  text-align: center;
+  width: 50vw;
+  margin-left:auto;
+  margin-right:auto;
 }
+
 
 /* Projects work */
 section#projects{
@@ -375,7 +393,11 @@ section#projects{
   background: white;
   box-sizing: border-box;
   padding: 40px;
+  color:#111;
+  text-align: center;
 }
+
+
 @media (min-width: 768px) {
   .inner {
     width: 50%;
@@ -407,7 +429,7 @@ section#projects{
   background-image: url("https://images.unsplash.com/photo-1516051662687-567d7c4e8f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
 }
 .card2 {
-  background-image: url("https://images.unsplash.com/photo-1496317556649-f930d733eea3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("https://media4.giphy.com/media/SsaTlLpHRibXLoZkzK/200.gif");
 }
 
 .card3 {
@@ -415,7 +437,13 @@ section#projects{
 }
 
 
-/*****CONTACT US SECTION******/
+/*CONTACT US SECTION*/
+
+section#contact{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 form { max-width:420px; margin:50px auto; }
 
@@ -427,7 +455,7 @@ form { max-width:420px; margin:50px auto; }
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #CC6666;
+  border:2px solid #FFE81F;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -436,7 +464,7 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
+.feedback-input:focus { border:2px solid #FFE81F; }
 
 textarea {
   height: 150px;
@@ -447,11 +475,11 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
+  background:#FFE81F;
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
+  color:black;
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
@@ -459,10 +487,15 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { background:#FFE81F; }
 
-.section_title{
-  text-align: center;
-  text-decoration: underline;
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
 }
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

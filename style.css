@@ -302,6 +302,7 @@ nav ul li.yellow:hover {
 
 #main_content{
   margin-top: 100px;
+  color:#ecfcff;
 }
 .shrink_content{
   margin-left: 300px;
@@ -319,8 +320,6 @@ nav ul li.yellow:hover {
   width: 50vw;
   margin-left:auto;
   margin-right:auto;
-  color:#ecfcff;
-
 }
 
 .description{
@@ -337,11 +336,19 @@ img{
 /* Previous work */
 section#previous{
   max-width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Projects work */
+section#projects{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
 .card {
-
   height: 400px;
   position: relative;
   padding: 20px;
@@ -407,4 +414,55 @@ section#previous{
   background-image: url("https://images.unsplash.com/photo-1557576842-3bc6093a5085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
 
+
+/*****CONTACT US SECTION******/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.section_title{
+  text-align: center;
+  text-decoration: underline;
+}
 
